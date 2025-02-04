@@ -21,7 +21,17 @@ dev = [
     "pytest>=8.3.4",
 ]
 
+[tool.uv]
+index-url = "https://test.pypi.org/simple"
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple/"
+
+
 [[tool.uv.index]]
 name = "testpypi"
 url = "https://test.pypi.org/simple/"
 publish-url = "https://test.pypi.org/legacy/"
+

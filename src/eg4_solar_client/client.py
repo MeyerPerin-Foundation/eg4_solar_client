@@ -209,7 +209,7 @@ class EG4Client:
         return True
 
     def set_default_config(self):
-        self.prioritize_battery_ac_charging("16:30", "18:00")
-        self.prioritize_battery_pv_charging("11:00", "18:00")
+        self.prioritize_battery_ac_charging("16:00", "18:00")
+        self.prioritize_battery_pv_charging("06:00", "18:00")
 
         return True
